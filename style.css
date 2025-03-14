@@ -1,18 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* body{
-    max-width: 100vw;
-    max-height: 100vh;
-    overflow: hidden;
-} */
+@font-face {
+    font-family: 'consolata'; /* Use single quotes around the font family name. */
+    src: url('C:/Users/Ansh/Desktop/conference-ticket-generator-main/assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype-variations'); /* Corrected file path and added format */
+  }
 
 /* *for desktop-design only */
 
-#background-desktop{
+#background-desktop {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,23 +19,23 @@
     width: 100vw;
 }
 
-#pattern-lines{
+#pattern-lines {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; 
-    height: 100vh; 
-    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
-#pattern-circle1{
+#pattern-circle1 {
     position: relative;
     left: 5vw;
     top: -5rem;
     scale: 0.80;
 }
 
-#pattern-circle2{
+#pattern-circle2 {
     position: fixed;
     scale: 0.78;
     top: 40vh;
@@ -44,35 +43,35 @@
 
 }
 
-#squiggly-desktop{
+#squiggly-desktop {
     position: fixed;
     left: 0;
     bottom: 0;
 }
 
-#squiggly-top{
+#squiggly-top {
     position: fixed;
     right: 0;
     top: 4rem;
 }
 
 @media only screen and (min-width: 992px) {
-    .desktop-asset{
+    .desktop-asset {
         display: block;
     }
 }
 
 
 @media only screen and (max-width: 992px) {
-    .desktop-asset{
+    .desktop-asset {
         display: none;
     }
 }
 
 
-/* For Tablet-design only */
+/* *For Tablet-design only* */
 
-#background-tablet{
+#background-tablet {
     position: fixed;
     top: 0;
     left: 0;
@@ -80,7 +79,7 @@
     width: 100vw;
 }
 
-#squiggly{
+#squiggly {
     position: fixed;
     left: -7.8rem;
     bottom: -7;
@@ -88,26 +87,26 @@
 }
 
 @media only screen and (min-width: 760px) {
-    .tablet-asset{
+    .tablet-asset {
         display: block;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .tablet-asset{
+    .tablet-asset {
         display: none;
     }
 }
 
 @media only screen and (max-width: 760px) {
-    .tablet-asset{
+    .tablet-asset {
         display: none;
     }
 }
 
-/* For Mobile Design only */
+/* *For Mobile Design only* */
 
-#background-mobile{
+#background-mobile {
     position: fixed;
     top: 0;
     left: 0;
@@ -115,14 +114,14 @@
     width: 100vw;
 }
 
-#squiggly-top-mobile{
+#squiggly-top-mobile {
     position: fixed;
     right: -4rem;
     top: 1rem;
     scale: 0.7;
 }
 
-#squiggly-mobile{
+#squiggly-mobile {
     position: fixed;
     left: -11.8rem;
     bottom: -9rem;
@@ -131,14 +130,46 @@
 
 
 @media only screen and (max-width: 760px) {
-    .mobile-asset{
+    .mobile-asset {
         display: block;
     }
 }
 
 
 @media only screen and (min-width: 760px) {
-    .mobile-asset{
+    .mobile-asset {
         display: none;
     }
 }
+
+
+/* *FrontEnd* */
+
+#logo-box {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading {
+    position: relative;
+    text-align: center;
+    font-family:  'consolata', monospace;
+    color: white;
+    top: -8rem;
+}
+
+#heading-description{
+    position: relative;
+    text-align: center;
+    top: -7rem;
+    font-family:  'consolata', monospace;
+    color: hsl(245, 19%, 35%);
+    font-size: 15px;
+}
+
+/*  */
