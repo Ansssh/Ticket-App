@@ -52,6 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const homeBtn = document.getElementById("home");
     homeBtn.addEventListener("click", ()=>{
         localStorage.clear();
-        window.location.href = "/index.html"
+        window.location.href = "../Ticket-App/"
     })
 });
