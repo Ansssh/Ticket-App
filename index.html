@@ -51,21 +51,27 @@
         <p id="upload-desc">Drag & Drop or Click to Upload</p>
         <div id="func-buttons" class="hidden"><button id="rem-img">Remove Image</button><button id="change-img">Change Image</button></div>
     </label>  
-    <input type="file" name="img-upload" id="img">
+    <input type="file" name="img-upload" id="img" accept="image/*">
 
-    <p id="img-info"><img src="assets/images/icon-info.svg" alt="icon-info"><span>Upload your photo (JPG or PNG, max size: 500KB).</span></p>
+    <div id="img-info" class="flex"><img src="assets/images/icon-info.svg" alt="icon-info" id="img-info-img"><span id="img-info-desc">Upload your photo (JPG or PNG, max size: 500KB).</span></div>
 
     <label for="name" id="name-legend">Full Name</label>
     <input type="text" name="name" id="name" class="txt-ip">
 
     <label for="email" id="name-legend">Email Address</label>
     <input type="text" name="email" id="email" class="txt-ip" placeholder="example@email.com">
+    <div id="mail-info" class="hidden"><img src="assets/images/icon-info.svg" alt="icon-info" id="mail-info-img"><span id="mail-info-desc"></span></div>
+
 
     <label for="github" id="name-legend">Github Username</label>
     <input type="text" name="github" id="github" class="txt-ip" placeholder="@yourusername">
+    <div id="git-info" class="hidden"><img src="assets/images/icon-info.svg" alt="icon-info" id="git-info-img"><span id="git-info-desc"></span></div>
+
 
     <button id="submit-btn">Generate My Ticket!</button>
 
+
+    <script src="script.js"></script>
 </form>
 </body>
 

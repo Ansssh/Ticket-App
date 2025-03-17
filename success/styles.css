@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'consolata', monospace;
+    color: white;
+}
+
+@font-face {
+    font-family: 'consolata';
+    src: url('assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf')
+}
+
+
+
+
+#background-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#pattern-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#pattern-circle1 {
+    position: relative;
+    left: 5vw;
+    top: -5rem;
+    scale: 0.80;
+}
+
+#pattern-circle2 {
+    position: fixed;
+    scale: 0.78;
+    top: 40vh;
+    left: 67vw;
+    
+}
+
+#squiggly-desktop {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#squiggly-top {
+    position: fixed;
+    right: 0;
+    top: 4rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .desktop-asset {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .desktop-asset {
+        display: none;
+    }
+}
+
+
+/* *For Tablet-design only* */
+
+#background-tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#squiggly {
+    position: fixed;
+    left: -7.8rem;
+    bottom: -7;
+    scale: 0.67;
+}
+
+@media only screen and (min-width: 760px) {
+    .tablet-asset {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .tablet-asset {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .tablet-asset {
+        display: none;
+    }
+}
+
+/* *For Mobile Design only* */
+
+#background-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#squiggly-top-mobile {
+    position: fixed;
+    right: -4rem;
+    top: 1rem;
+    scale: 0.7;
+}
+
+#squiggly-mobile {
+    position: fixed;
+    left: -11.8rem;
+    bottom: -9rem;
+    scale: 0.5;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .mobile-asset {
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 760px) {
+    .mobile-asset {
+        display: none;
+    }
+}
+
+
+/* *FrontEnd* */
+
+#logo-box {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading1, #heading2 {
+    position: relative;
+    text-align: center;
+    /* font-family: 'consolata', monospace; */
+    color: white;
+    top: -8rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#heading-description1, #heading-description2 {
+    position: relative;
+    text-align: center;
+    top: -7rem;
+    /* font-family: 'consolata', monospace; */
+    color:  hsl(252, 6%, 83%);
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+    #heading1, #heading-description1{
+        display: none;
+    }
+    #heading2, #heading-description2{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    #heading1 , #heading-description1{
+        display: block;
+    }
+    #heading2, #heading-description2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #heading2{
+        font-size: 1.5em;
+    }
+}
+
+#s-heading-inn {
+    background-image: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    color: transparent;
+    background-clip: text;
+}
+
+#heading-description-inn{
+    color: hsl(7, 88%, 67%);
+}
+
+
+
+
+#ticket-img{
+    width: 100%;
+}
+
+@media only screen and (min-width: 300px) {
+    #ticket{
+        display: flex;
+        position: relative;
+        justify-self: center;
+        top: -4rem;
+        width: 300px;
+    }
+    #ticket-no{
+        position: relative;
+        transform: rotate(90deg);
+        right: 130px;
+        opacity: 0.5;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    
+    #logo{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 45px;
+        width: 45px;
+    }
+    
+    #logo-name{
+        position: absolute;
+        top: 8px;
+        left: 60px;
+    }
+    
+    #date-gps{
+        position: absolute;
+        top: 40px;
+        left: 62px;
+        font-size: 10px;
+        color: hsl(252, 6%, 83%);
+    }
+    
+    #user-photo{
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        border-radius: 5px;
+        bottom: 10px;
+        left: 10px;
+        object-fit: cover;
+    }
+    
+    #user-name{
+        position: absolute;
+        bottom: 35px;
+        left: 60px;
+        font-size: 15px;
+        font-weight: 550;
+    }
+    
+    #icon-github{
+        position: absolute;
+        bottom: 12px;
+        left: 60px;
+    }
+    
+    #github-username{
+        position: absolute;
+        bottom: 17px;
+        left: 85px;
+        font-size: 12px;
+        color: hsl(252, 6%, 83%);
+    }
+    
+}
+
+@media only screen and (min-width: 720px) {
+    #ticket{
+        display: flex;
+        position: relative;
+        justify-self: center;
+        top: -4rem;
+        width: 500px;
+    }
+
+    #ticket-no{
+        position: relative;
+        transform: rotate(90deg);
+        right: 200px;
+        opacity: 0.5;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    #logo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    #logo-name{
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        font-size: 30px;
+    }
+    
+    #date-gps{
+        position: absolute;
+        top: 60px;
+        left: 102px;
+        font-size: 15px;
+        color: hsl(252, 6%, 83%);
+    }
+    
+    #user-photo{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-radius: 5px;
+        bottom: 20px;
+        left: 20px;
+        object-fit: cover;
+    }
+    
+    #user-name{
+        position: absolute;
+        bottom: 55px;
+        left: 100px;
+        font-size: 30px;
+        font-weight: 550;
+    }
+    
+    #icon-github{
+        position: absolute;
+        bottom: 30px;
+        left: 100px;
+    }
+    
+    #github-username{
+        position: absolute;
+        bottom: 35px;
+        left: 125px;
+        font-size: 14px;
+        color: hsl(252, 6%, 83%);
+    }
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+    justify-self: center;
+}
+
+
+#home, #share{
+    display: flex;
+    position: relative;
+    justify-self: center;
+    background-color: hsla(245, 19%, 35%, 0.5);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
