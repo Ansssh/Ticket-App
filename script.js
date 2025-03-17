@@ -145,7 +145,7 @@ form.addEventListener("submit", (e)=>{
         localStorage.setItem("name", namee.value.trim());
         localStorage.setItem("email", mail.value);
         localStorage.setItem("git", git.value);
-        window.location.href = "./success/success.html";
+        window.location.href = "./Ticket-App/success/success.html";
     }
 })
 
