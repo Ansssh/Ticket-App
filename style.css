@@ -308,6 +308,17 @@ input[type="file"] {
 
 }
 
+#rem-img, #change-img{
+    background-color:  hsla(245, 19%, 35%, 0.3);
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+#change-img{
+    margin-left: 0.5rem;
+}
+
 .hidden{
     display: none;
 }
