@@ -39,8 +39,34 @@
   <!-- FrontEnd -->
   <div id="logo-box"><img src="assets/images/logo-full.svg" alt="logo" id="logo-full"></div>
 
-  <h1 id="heading">Your Journey to Coding Conf<br> 2025 Starts Here!</h1>
   <p id="heading-description">Secure your spot at next year's biggest coding conference.</p>
+  <h1 id="heading1">Your Journey to Coding Conf<br> 2025 Starts Here!</h1>
+  <h1 id="heading2">Your Journey to Coding <br> Conf 2025 Starts Here!</h1>
+
+
+  <form action="" id="forum">
+    <label for="img" id="img-legend">Upload Avatar</label><br>
+    <label for="img" id="true-label">
+        <img src="assets/images/icon-upload.svg" alt="upload" id="upload-img">
+        <p id="upload-desc">Drag & Drop or Click to Upload</p>
+        <p id="func-buttons" class="hidden"><button>Remove Image</button><button>Change Image</button></p>
+    </label>
+    <input type="file" name="img-upload" id="img">
+
+    <p id="img-info"><img src="assets/images/icon-info.svg" alt="icon-info"><span>Upload your photo (JPG or PNG, max size: 500KB).</span></p>
+
+    <label for="name" id="name-legend">Full Name</label>
+    <input type="text" name="name" id="name" class="txt-ip">
+
+    <label for="email" id="name-legend">Email Address</label>
+    <input type="text" name="email" id="email" class="txt-ip" placeholder="example@email.com">
+
+    <label for="github" id="name-legend">Github Username</label>
+    <input type="text" name="github" id="github" class="txt-ip" placeholder="@yourusername">
+
+    <button id="submit-btn">Generate My Ticket!</button>
+
+</form>
 </body>
 
 </html>

@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'consolata', monospace;
+    color: white;
 }
 
 @font-face {
-    font-family: 'consolata'; /* Use single quotes around the font family name. */
-    src: url('C:/Users/Ansh/Desktop/conference-ticket-generator-main/assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype-variations'); /* Corrected file path and added format */
-  }
+    font-family: 'consolata';
+    src: url('assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf')
+}
 
 /* *for desktop-design only */
 
@@ -146,7 +148,7 @@
 /* *FrontEnd* */
 
 #logo-box {
-    position: fixed;
+    position: absolute;
     top: 1rem;
     left: 0;
     display: flex;
@@ -155,21 +157,157 @@
     justify-content: center;
 }
 
-#heading {
+#heading1, #heading2 {
     position: relative;
     text-align: center;
-    font-family:  'consolata', monospace;
+    /* font-family: 'consolata', monospace; */
     color: white;
-    top: -8rem;
+    top: -10rem;
+    font-size: 2.5rem;
 }
 
-#heading-description{
+#heading-description {
     position: relative;
     text-align: center;
-    top: -7rem;
-    font-family:  'consolata', monospace;
-    color: hsl(245, 19%, 35%);
+    top: -2.5rem;
+    /* font-family: 'consolata', monospace; */
+    color:  hsl(252, 6%, 83%);
     font-size: 15px;
 }
 
+@media only screen and (max-width: 540px) {
+    #heading1{
+        display: none;
+    }
+    #heading2{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    #heading1{
+        display: block;
+    }
+    #heading2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #heading2{
+        font-size: 1.5em;
+    }
+    #heading-description{
+        font-size: 0.7em;
+        top: -5rem;
+    }
+    #forum{
+        width: 250px;
+    }
+}
+
+
+
 /*  */
+
+
+#forum {
+    position: relative;
+    top: -6em;
+    justify-self: center;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#submit-btn {
+    width: 100%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#true-label {
+    border: 2px hsl(245, 15%, 58%) dashed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: hsla(245, 19%, 35%, 0.5);
+}
+
+#upload-desc{
+    color: white;
+    /* font-family: 'consolata', monospace; */
+}
+
+#upload-img{
+    padding: 1em;
+    background-color: hsla(245, 19%, 35%, 0.3);
+    border-radius: 10px;
+}
+
+#img-legend{
+    color: white;
+    /* font-family: 'consolata', monospace; */
+}
+
+#img-info{
+    display: flex;
+    gap: 3px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#img-info span{
+    color: hsla(252, 6%, 83%,0.3);
+    font-size: small;
+    text-align: center;
+}
+
+#name-legend{
+    margin-top: 1em;
+}
+
+
+.txt-ip{
+    background-color: hsla(245, 19%, 35%, 0.5);
+    padding: 0.7em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    border: 2px hsl(245, 15%, 58%) solid;
+}
+
+
+#submit-btn{
+    background-color: hsl(7, 71%, 60%);
+    padding: 0.7em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 0.5em;
+    color: black;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 460px) {
+    #forum{
+        width: 80vw;
+    }
+    #img-info span{
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+}
+
+.hidden{
+    display: none;
+}
