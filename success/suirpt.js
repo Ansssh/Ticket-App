@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const fname = document.getElementById("s-heading-inn");
     const fmail = document.getElementById("heading-description-inn");
@@ -31,7 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const ticket = document.getElementById("ticket-no");
-    ticket.textContent = "#" +  Math.round(Math.random() * 100000);
+    const round = "#" +  Math.round(Math.random() * 100000)
+    ticket.textContent = round;
     
     
     if (storedProfilePic) {
@@ -40,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     function copyText() {
-        const text = "Hello, this is the text to share!";
+        const text = `${round}`;
         navigator.clipboard.writeText(text)
           .then(() => alert("Text copied! Paste it in any app."))
           .catch(err => console.error("Failed to copy:", err));
@@ -52,6 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const homeBtn = document.getElementById("home");
     homeBtn.addEventListener("click", ()=>{
         localStorage.clear();
-        window.location.href = "../Ticket-App/"
+        window.location.href = "/index.html"
     })
 });

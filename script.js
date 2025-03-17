@@ -95,10 +95,6 @@ removeImageBtn.addEventListener("click", (e) => {
     funcButtons.classList.add("hidden");
 });
 
-changeImageBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    img.click(); // Opens the file input dialog
-});
 
 
 
@@ -139,13 +135,13 @@ git.addEventListener("change", (e)=>{
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
-    if(!validateMail(mail.value) || !validateGitHubUsername(git.value) || !namee.value.trim()){
+    if(!validateMail(mail.value) || !validateGitHubUsername(git.value) || namee.value.trim().length === 0){
         alert("something is not right!");
     }else{
         localStorage.setItem("name", namee.value.trim());
         localStorage.setItem("email", mail.value);
         localStorage.setItem("git", git.value);
-        window.location.href = "/Ticket-App/success/success.html";
+        window.location.href = "/success/success.html";
     }
 })
 
