@@ -93,6 +93,7 @@ removeImageBtn.addEventListener("click", (e) => {
     userImgPlace.style.height = "auto";
     uploadDescription.classList.remove("hidden");
     funcButtons.classList.add("hidden");
+    localStorage.removeItem("img");
 });
 
 
@@ -141,7 +142,7 @@ form.addEventListener("submit", (e)=>{
         localStorage.setItem("name", namee.value.trim());
         localStorage.setItem("email", mail.value);
         localStorage.setItem("git", git.value);
-        window.location.href = "/success/success.html";
+        window.location.href = "success/success.html";
     }
 })
 
